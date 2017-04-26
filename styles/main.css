@@ -3,24 +3,41 @@ header {
     left:0;
     right:0;
     top:0;
-    height:40px;
-    padding: 5px 20px;
+    height:76px;
+    line-height: 76px;
     display: flex;
     align-content: flex-start;
+    box-shadow: 0 1px 3px #eee;
+    justify-content: space-between;
 }
 
-.searchbox {
-    align-self: flex-end;
+.search-box-container {
+    algin-self: flex-end;
+    line-height: 76px;
+    vertical-align: middle;
 }
 
-.icon {
-    border-radius: 20px;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
+.search-box {
+    width: 206px;
+    height: 42px;
+    margin-right: 20px;
+    border-radius: 22px;
+    width: 206px;
+    height: 42px;
+    border: 1px solid #111;
     display: inline-block;
-    font-size: 25px;
+    line-height: 76px;
+}
+
+i.icon {
+    border-radius: 22px;
+    height: 44px;
+    min-width: 44px;
+    line-height: 44px;
+    display: inline-block;
+    font-size: 20px;
     text-align: center;
+    vertical-align: middle;
 }
 
 .icon-blue {
@@ -28,87 +45,54 @@ header {
     background-color: #81a8ca;
 }
 
-@font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-grvpaa');
-	src:url('fonts/icomoon.eot?#iefix-grvpaa') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-grvpaa') format('woff'),
-		url('fonts/icomoon.ttf?-grvpaa') format('truetype'),
-		url('fonts/icomoon.svg?-grvpaa#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+.icon-white {
+    color: #111;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
 }
 
-[class^="fa-"], [class*=" fa-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+.logo {
+    border-right: 1px solid #cccccc;
+    min-width: 76px;
+    text-align: center;
 }
 
-.fa-mail:before {
-	content: "\f03b";
+.avatar {
+    background-image: url(../resources/p0.jpg);
+    background-size: 100% 100%;
 }
 
-.fa-plus:before {
-	content: "\f05d";
+.content {
+    display: flex;
+    margin-top: 76px;
 }
 
-.fa-quill:before {
-	content: "\e600";
+@media (max-width: 520px) {
+    .menu-item {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+    }
 }
 
-.fa-redo:before {
-	content: "\e601";
+@media (min-width: 521px) and (max-width: 900px) {
+    .menu-item {
+        display: inline-block;
+    }
 }
 
-.fa-twitter:before {
-	content: "\e608";
+@media (min-width: 901px) {
+    .menu-item {
+        display: inline-block;
+    }
+    .content {
+        align-items: stretch;
+        flex-direction: row;
+    }
 }
 
-.fa-search:before {
-	content: "\f002";
-}
 
-.fa-star:before {
-	content: "\f005";
-}
 
-.fa-refresh:before {
-	content: "\f021";
-}
-
-.fa-chain:before {
-	content: "\f0c1";
-}
-
-.fa-resize:before {
-	content: "\e603";
-}
-
-.fa-resize:before {
-	content: "\e603";
-}
-
-.fa-notifications:before {
-	content: "\e607";
-}
-
-.fa-notifications:before {
-	content: "\e607";
-}
-
-.fa-more-horiz:before {
-	content: "\e606";
-}
-
-.fa-notifications:before {
-	content: "\e607";
-}
 
